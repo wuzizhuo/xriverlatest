@@ -1,0 +1,20 @@
+#1.growth factor
+从gene-image.csv那里的image提供前端两张图片的选项
+#two figure  
+/home/wupf_260213/controlnet/ALLmodels/model/growth factor/front/inputfig.py
+#smile
+把生成的smile保存在Result这里，然后前端从Result这里读取，前端功能框“ growthsmile”
+/home/wupf_260213/controlnet/ALLmodels/model/growth factor/front/Result.py
+
+#2.growth process
+#two figure
+从gene-image.csv那里的image提供前端两张图片的选项，并且
+/home/wupf_260213/controlnet/ALLmodels/model/growth process/front/inputfig.py
+#gsvaaction
+/home/wupf_260213/controlnet/ALLmodels/model/growth process/front/Result.py
+
+
+#initiate  figure
+/home/wupf_260213/controlnet/ALLmodels/model/Response/front/inputfig.py
+other figure
+/home/wupf_260213/controlnet/ALLmodels/model/Response/front/Result.py

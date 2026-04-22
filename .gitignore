@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data
+*.csv
+*.pkl
+*.h5
+*.npy
+
+# Checkpoints
+checkpoints/
+ppocheckpoin/
+
+# Models
+ALLmodels/
+
+# Logs
+logs/
+lightning_logs/
+
+# Environment
+.env
+venv/
+conda_env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+*.swp
+*.swo
+*~

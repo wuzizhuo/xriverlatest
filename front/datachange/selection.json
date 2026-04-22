@@ -1,0 +1,8 @@
+{
+  "updated_at": 1776758050,
+  "selection": {
+    "module": "growth_factor",
+    "source_image": "/home/wupf_260213/controlnet/ALLmodels/model/data/cellpainting/images/BR00116991/A05/site_1__DNA.tiff",
+    "target_image": "/home/wupf_260213/controlnet/ALLmodels/model/data/cellpainting/images/BR00116991/A06/site_1__DNA.tiff"
+  }
+}
