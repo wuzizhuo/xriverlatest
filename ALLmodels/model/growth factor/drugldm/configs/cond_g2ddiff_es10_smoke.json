@@ -1,0 +1,37 @@
+{
+  "device": "cpu",
+  "seed": 0,
+  "amp": 0,
+
+  "data_csv": "/home/wupf_260213/controlnet/ALLmodels/model/data/cellpainting/images/BRset/images/image-smiles.csv",
+  "max_rows": 16,
+
+  "gsvapredict_ckpt": "/home/wupf_260213/controlnet/ALLmodels/model/outputs/_pipe_smoke/gsvapredict_last.pt",
+  "cp_segmentation": "cellpose",
+  "cp_min_cell_area_px": 80,
+
+  "g2ddiff_vae_ckpt": "/home/wupf_260213/controlnet/ALLmodels/model/drugldm/outputs/g2ddiff_vae_ft_imagesmiles/g2ddiff_vae_best.pt",
+  "g2ddiff_tokens": "/home/wupf_260213/controlnet/ALLmodels/model/drugldm/outputs/g2ddiff_vae_ft_imagesmiles/tokens.txt",
+  "latent_dim": 128,
+
+  "diffusion_steps": 50,
+  "d_model": 128,
+  "nhead": 4,
+
+  "batch_size": 2,
+  "num_workers": 0,
+  "lr": 0.0005,
+  "gez_loss_weight": 0.1,
+
+  "epochs": 2,
+  "steps_per_epoch": 2,
+  "max_steps": 0,
+
+  "log_every_steps": 1,
+  "save_every_steps": 0,
+
+  "early_stop_patience": 10,
+
+  "tensorboard": 0,
+  "out_dir": "/home/wupf_260213/controlnet/ALLmodels/model/growth factor/drugldm/outputs/cond_g2ddiff_smoke_vae"
+}

@@ -1,0 +1,15 @@
+- drugldmmodel 的 decode（把 z0 解码成 SMILES）用的 pt
+
+- SMILES VAE ckpt： /home/wupf_260213/controlnet/ppotools/model/outputs/drugldm/morph_smiles_vae.pt
+- drugldmmodel 在 eval 时会从 ckpt["config"]["smiles_vae_ckpt"] 或 ckpt["config"]["drugvae_ckpt"] 读取这个路径并加载（见 drugldmmodel.py:L474-L503 ）
+- drugldmmodel 本体（扩散/denoiser）checkpoint（如果你也需要）
+
+- 默认 eval 取： /home/wupf_260213/controlnet/ppotools/model/outputs/drugldm/drugldm_last.pt （见 drugldmmodel.py:L639-L641 ）
+- 目录里还有： /home/wupf_260213/controlnet/ppotools/model/outputs/drugldm/drugldm_step120000.pt 、 /home/wupf_260213/controlnet/ppotools/model/outputs/drugldm/drugldm_step49000.pt
+- MorphDiff 的 image VAE（你现在训练 xriverlatendrug 用的）
+
+- VAE config： /home/wupf_260213/controlnet/ppotools/model/Mordiffreal/MorphDiff/configs/autoencoder/autoencoder_kl_32x32x4_5c.yaml
+- VAE ckpt： /home/wupf_260213/controlnet/ppotools/model/Mordiffreal/MorphDiff/logs/2026-04-01T23-24-40_dna_mvae_256/checkpoints/last.ckpt
+- Drug VAE（你现在训练 xriverlatendrug 用的）
+
+- ckpt： /home/wupf_260213/controlnet/ppotools/model/outputs/xrivervae/vaedrug_BR00116991.cpkt

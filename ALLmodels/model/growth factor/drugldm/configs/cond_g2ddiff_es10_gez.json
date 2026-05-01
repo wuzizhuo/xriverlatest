@@ -1,0 +1,46 @@
+{
+  "device": "auto",
+  "seed": 0,
+  "amp": 1,
+  "max_vram_gb": 0.0,
+
+  "data_csv": "/home/wupf_260213/controlnet/ALLmodels/model/data/cellpainting/images/BRset/images/image-smiles.csv",
+  "max_rows": 0,
+
+  "gsvapredict_ckpt": "/home/wupf_260213/controlnet/ALLmodels/model/outputs/_pipe_smoke/gsvapredict_last.pt",
+  "cp_segmentation": "cellpose",
+  "cp_min_cell_area_px": 80,
+  "cp_require_precomputed": true,
+  "cp_allow_online": false,
+  "cp_features_npz": "/home/wupf_260213/controlnet/ALLmodels/model/outputs/_pipe_smoke/cp_features.npz",
+
+  "g2ddiff_vae_ckpt": "/home/wupf_260213/controlnet/ALLmodels/model/growth factor/drugldm/outputs/g2ddiff_vae_ft_imagesmiles/g2ddiff_vae_best.pt",
+  "g2ddiff_tokens": "/home/wupf_260213/controlnet/ALLmodels/model/growth factor/drugldm/outputs/g2ddiff_vae_ft_imagesmiles/tokens.txt",
+  "latent_dim": 128,
+
+  "gsvavae_ckpt": "/home/wupf_260213/controlnet/ALLmodels/model/growth factor/drugldm/outputs/gsvavae_from_img/gsvavae_best.pt",
+
+  "diffusion_steps": 1000,
+  "d_model": 256,
+  "nhead": 4,
+
+  "batch_size": 4,
+  "num_workers": 0,
+  "lr": 0.0001,
+
+  "gez_loss_weight": 1.0,
+  "sigreg_lam": 0.01,
+  "sigreg_sketch_dim": 128,
+
+  "epochs": 2000,
+  "steps_per_epoch": 0,
+  "max_steps": 0,
+
+  "log_every_steps": 50,
+  "save_every_steps": 500,
+
+  "early_stop_patience": 10,
+
+  "tensorboard": 1,
+  "out_dir": "/home/wupf_260213/controlnet/ALLmodels/model/growth factor/drugldm/outputs/cond_g2ddiff_es10_gez_gsvavae_xattn"
+}
