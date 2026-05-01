@@ -25,3 +25,6 @@ python /home/wupf_260213/controlnet/ALLmodels/model/Response/gsvaldm/gsvaldm.py
 5.Cell interaction
 To explore the result of cell groups interaction 
 python /home/wupf_260213/controlnet/Cellhaness/IDgenerate/CellMix/train_vae_ldm_pairformer.py
+
+<img width="2185" height="2497" alt="Vitual" src="https://github.com/user-attachments/assets/a87a5141-2d0e-4b5f-9682-29f71a4888f4" />
+
