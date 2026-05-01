@@ -534,6 +534,8 @@ class CellAtlasDiffusion(nn.Module):
         self.register_buffer('sqrt_alphas_cumprod', torch.sqrt(self.alphas_cumprod))
         self.register_buffer('sqrt_one_minus_alphas_cumprod', 
                             torch.sqrt(1.0 - self.alphas_cumprod))
+        x,y,z=torch.gausin(Z)
+        k=(1-a)*x+a*y+b*z
         
     def _get_beta_schedule(self, schedule):
         if schedule == 'cosine':
